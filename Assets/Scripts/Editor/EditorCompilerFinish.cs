@@ -5,11 +5,11 @@ using UnityEditor;
 using UnityEditor.Compilation;
 
 [InitializeOnLoad]
-public class EditorCompiler
+public class EditorCompilerFinish
 {
     private static bool showAlert = false;
 
-    static EditorCompiler()
+    static EditorCompilerFinish()
     {
         CompilationPipeline.assemblyCompilationFinished += (value, messages) =>
         {
